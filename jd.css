@@ -1,0 +1,3590 @@
+@charset 'utf-8';
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 12px/150% Arial, Verdana, "\5b8b\4f53";
+  color: #666;
+  background: #fff;
+  list-style: none;
+}
+.clear {
+  zoom: 1;
+}
+.clear:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.container {
+  width: 90%;
+  padding: 0;
+}
+header {
+  background-color: #F1F1F1;
+  height: 30px;
+  line-height: 30px;
+}
+header .xiabian {
+  position: relative;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+header .xiabian0 {
+  position: absolute;
+  z-index: 10;
+  display: none;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-top: none;
+  left: -1px;
+  top: 29px;
+}
+header .xiabian1 {
+  width: 300px;
+  padding: 10px;
+}
+header .xiabian1 a {
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  color: #666;
+}
+header .xiabian1 a:hover {
+  color: white;
+  background-color: #C81623;
+  text-decoration: none;
+}
+header .xiabian1 .now {
+  color: white;
+  background-color: #C81623;
+}
+header .xiabian2 {
+  width: 250px;
+  padding: 20px;
+}
+header .xiabian2 a {
+  color: #333333;
+}
+header .xiabian2 a:hover {
+  color: #C81623;
+  text-decoration: none;
+}
+header .xiabian2 .first {
+  font-weight: bold;
+  margin-bottom: -10px;
+}
+header .xiabian2 li {
+  list-style: none;
+}
+header .xiabian2 ul {
+  margin-right: 50px;
+}
+header .xiabian2 .img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  border-radius: 50px;
+}
+header .xiabian2 .img img {
+  width: 100%;
+  height: 100%;
+}
+header .xiabian4 {
+  width: 200px;
+  padding: 20px;
+}
+header .xiabian4 a {
+  margin-right: 30px;
+}
+header .xiabian4 .title {
+  font-weight: bold;
+}
+header .xiabian4 p {
+  margin-bottom: -10px;
+}
+header .xiabian4 .t {
+  border-bottom: 1px solid #ccc;
+  border-bottom-style: dashed;
+  padding-bottom: 10px;
+}
+header #xiabian5 {
+  position: absolute;
+  width: 1215px;
+  left: -1137px;
+  padding: 20px;
+}
+header #xiabian5 li {
+  list-style: none;
+  margin-right: 45px;
+}
+header #xiabian5 ul {
+  float: left;
+}
+header #xiabian5 .title {
+  font-weight: bold;
+}
+header #xiabian5 .pull-left {
+  border-right: 1px solid #ccc;
+  padding-left: 27px;
+  padding-right: 2px;
+}
+header #xiabian5 .last {
+  border: none;
+}
+header .xy {
+  font-size: 5px;
+  margin-left: 5px;
+}
+header .fr a {
+  color: #666;
+}
+header .fr a:hover {
+  color: #C81623;
+  text-decoration: none;
+}
+header .fr .span {
+  padding-left: 10px;
+  padding-right: 10px;
+  float: left;
+}
+header .fr .register {
+  color: #C81623;
+}
+header .fr .login {
+  margin-right: 5px;
+}
+.alert {
+  padding: 0;
+}
+.img {
+  position: relative;
+  background-color: #E72F25;
+  width: 100%;
+}
+.img .close {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  background-color: #ccc;
+  width: 20px;
+  height: 20px;
+}
+.img .close span {
+  color: white;
+}
+.img img {
+  width: 100%;
+}
+.top {
+  width: 100%;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #B1191A;
+}
+.top .shang {
+  padding-bottom: 19px;
+}
+.top .shang .login {
+  margin-right: 100px;
+}
+.top .shang .search a {
+  margin-right: 5px;
+  color: #666;
+}
+.top .shang .search a:hover {
+  color: #C81623;
+  text-decoration: none;
+}
+.top .shang .search .one {
+  color: #C81623;
+}
+.top .shang .search input {
+  width: 452px;
+  border: 2px solid #B1191A;
+  height: 35px;
+  padding-left: 5px;
+}
+.top .shang .search .px {
+  margin-top: -7px;
+}
+.top .shang .search button {
+  width: 85px;
+  height: 35px;
+  border: 2px solid #B1191A;
+  color: white;
+  background-color: #B1191A;
+  margin-left: -5px;
+  font-size: 18px;
+  position: relative;
+  top: 2px;
+}
+.top .shang .buy {
+  position: relative;
+}
+.top .shang .buy .things {
+  padding: 10px;
+  box-shadow: 1px 1px 1px 1px #ccc;
+  background-color: white;
+  position: absolute;
+  width: 300px;
+  border: 1px solid #ccc;
+  z-index: 10;
+  right: 0;
+  display: none;
+}
+.top .shang .buy .things .white {
+  position: absolute;
+  width: 138px;
+  height: 20px;
+  z-index: 30;
+  right: 0px;
+  top: -10px;
+  background-color: #ffffff;
+}
+.top .shang .buy .che {
+  position: relative;
+  z-index: 5;
+  margin-top: 2px;
+  margin-left: 100px;
+  width: 140px;
+  height: 33px;
+  background-color: #F9F9F9;
+  border: 1px solid #ccc;
+}
+.top .shang .buy .che a {
+  color: #333333;
+}
+.top .shang .buy .che a:hover {
+  color: #C81623;
+  text-decoration: none;
+}
+.top .shang .buy .che .s1 {
+  margin-top: 2px;
+  margin-left: 10px;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  background-image: url('images/jd2015img.png');
+  background-position: 0 50px;
+}
+.top .shang .buy .che .s2 {
+  display: inline-block;
+  position: relative;
+  top: -7px;
+}
+.top .xia {
+  font-size: 16px;
+}
+.top .xia ul {
+  margin-left: 230px;
+}
+.top .xia li {
+  margin-right: 38px;
+  list-style: none;
+  float: left;
+}
+.top .xia li a {
+  color: #333;
+}
+.top .xia li a:hover {
+  color: #C81623;
+  text-decoration: none;
+}
+._main .left {
+  margin-top: -45px;
+}
+._main .left .dh {
+  position: relative;
+  list-style: none;
+  color: white;
+}
+._main .left .dh .shangpin {
+  background-color: #F7F7F7;
+  width: 1000px;
+  height: 500px;
+  position: absolute;
+  border: 1px solid #c81623;
+  z-index: 30;
+  top: 44px;
+  left: 218px;
+  display: none;
+  border-left: none;
+  color: #666;
+  list-style: none;
+  padding: 20px;
+  padding-top: 20px;
+}
+._main .left .dh .shangpin .lz {
+  float: left;
+}
+._main .left .dh .shangpin .lz .title {
+  font-weight: bold;
+  float: left;
+  color: #333;
+  margin-right: 10px;
+}
+._main .left .dh .shangpin .lz .title:hover {
+  color: #c81623;
+}
+._main .left .dh .shangpin .lz .nr {
+  border-bottom: 1px solid #ccc;
+  float: left;
+  width: 600px;
+}
+._main .left .dh .shangpin .lz .nr span {
+  color: #cccccc;
+}
+._main .left .dh .shangpin .lz .t {
+  margin-bottom: 10px;
+}
+._main .left .dh .shangpin .lz .t li {
+  float: left;
+  list-style: none;
+  margin-right: 10px;
+  cursor: pointer;
+}
+._main .left .dh .shangpin .lz .t li:hover .z {
+  background-color: #c81623;
+}
+._main .left .dh .shangpin .lz .t li:hover .y {
+  background-color: #b61b1f;
+}
+._main .left .dh .shangpin .lz .t .z,
+._main .left .dh .shangpin .lz .t .y {
+  display: inline-block;
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+._main .left .dh .shangpin .lz .t .z {
+  background-color: #666666;
+}
+._main .left .dh .shangpin .lz .t .y {
+  background-color: #333333;
+}
+._main .left .dh .shangpin .lz .b li {
+  list-style: none;
+}
+._main .left .dh .shangpin .lz .b li a {
+  color: #333;
+}
+._main .left .dh .shangpin .lz .b li a:hover {
+  color: #c81623;
+  text-decoration: none;
+}
+._main .left .dh .shangpin .ry {
+  float: right;
+}
+._main .left .dh .shangpin .ry ._tt {
+  padding-left: 2px;
+  margin-bottom: 30px;
+}
+._main .left .dh .shangpin .ry ._tt img {
+  width: 83px;
+  margin-left: -2px;
+}
+._main .left .dh .shangpin .ry img {
+  margin-bottom: 1px;
+}
+._main .left .dh .all {
+  line-height: 45px;
+  height: 45px;
+  font-size: 15px;
+  background-color: #b1191a;
+}
+._main .left .dh .all:hover {
+  cursor: pointer;
+  background-color: #B1191A;
+}
+._main .left .dh .all:hover a {
+  color: white;
+}
+._main .left .dh > li {
+  border-left: 1px solid #C81623;
+  padding-left: 10px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  background-color: #C81623;
+}
+._main .left .dh > li > a {
+  color: white;
+}
+._main .left .dh > li > span {
+  margin-right: 10px;
+  margin-left: 10px;
+  float: right;
+}
+._main .left .dh > li:hover {
+  background-color: #F7F7F7;
+  color: #F7F7F7;
+}
+._main .left .dh > li:hover > a {
+  color: #C81623;
+  text-decoration: none;
+}
+._main .left .dh > li:hover .shangpin {
+  display: block;
+}
+._main .right {
+  position: relative;
+  height: 440px;
+  margin-top: 12px;
+}
+._main .right li {
+  list-style: none;
+}
+._main .right .daohang {
+  position: relative;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  padding-bottom: -10px;
+}
+._main .right .daohang .yc {
+  position: absolute;
+}
+._main .right .daohang .yc li {
+  width: 254px ;
+  z-index: 30;
+  height: 150px ;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-top: none;
+  position: absolute;
+  top: -130px;
+  right: -253px;
+}
+._main .right .daohang .kb {
+  border-bottom: 1px solid #ccc;
+}
+._main .right .daohang .kb .title {
+  border-bottom: 1px solid #ccc;
+  height: 35px;
+  line-height: 35px;
+  font-size: 18px;
+}
+._main .right .daohang .kb .title a {
+  font-size: 14px;
+}
+._main .right .daohang .kb .one {
+  margin-top: 5px;
+}
+._main .right .daohang .kb .last {
+  margin-bottom: 5px;
+}
+._main .right .daohang .kb li {
+  padding-left: 15px;
+  height: 25px;
+  line-height: 25px;
+}
+._main .right .daohang .kb li a {
+  color: #666;
+}
+._main .right .daohang .kb li a .more {
+  font-weight: normal;
+  margin-left: 100px;
+  margin-right: 10px;
+}
+._main .right .daohang .kb li a span {
+  font-weight: bold;
+}
+._main .right .daohang .kb li a:hover {
+  color: #C81623;
+  text-decoration: none;
+}
+._main .right .daohang .nr p {
+  margin-top: -10px;
+  margin-left: 3px;
+}
+._main .right .daohang .nr p .r {
+  border-right: none;
+}
+._main .right .daohang .nr p > span {
+  position: relative;
+  text-align: center;
+  padding-top: 35px;
+  width: 64px;
+  margin-left: -4px;
+  height: 60px;
+  display: inline-block;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+._main .right .daohang .nr p > span .bj {
+  width: 25px;
+  height: 25px;
+  background-image: url('images/56f4e6b8N940f608c.png');
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 5px;
+}
+._main .right .daohang .nr p > span .bj2 {
+  background-position: 0 -25px;
+}
+._main .right .daohang .nr p > span .bj3 {
+  background-position: 0 -50px;
+}
+._main .right .daohang .nr p > span .bj4 {
+  background-position: 0 -75px;
+}
+._main .right .daohang .nr p > span .bj5 {
+  background-position: 0 -100px;
+}
+._main .right .daohang .nr p > span .bj6 {
+  background-position: 0 -125px;
+}
+._main .right .daohang .nr p > span .bj7 {
+  background-position: 0 -150px;
+}
+._main .right .daohang .nr p > span .bj8 {
+  background-position: 0 -175px;
+}
+._main .right .daohang .nr p > span .bj10 {
+  background-position: 0 -200px;
+}
+._main .right .daohang .nr p > span .bj12 {
+  background-position: 0 -225px;
+}
+._main .right .daohang .nr p > span .bj9 {
+  background-position: 0 -250px;
+}
+._main .right .daohang .nr p > span .bj11 {
+  background-position: 0 -275px;
+}
+._main .right .daohang .nr p > span:hover {
+  color: #C81623;
+  cursor: pointer;
+}
+._main .right .imag {
+  position: absolute;
+  bottom: 0px;
+}
+._main .right .imag img {
+  width: 100.5%;
+}
+._main .center {
+  position: relative;
+  margin-top: 12px;
+  margin-left: 10px;
+}
+._main .center .tp li {
+  list-style: none;
+}
+._main .center img {
+  position: absolute;
+  left: 0px ;
+  top: 0px;
+  width: 723px;
+  height: 440px;
+}
+._main .center .an {
+  position: relative;
+  z-index: 10;
+  left: 300px;
+  bottom: -400px;
+}
+._main .center .an li {
+  cursor: pointer;
+  list-style: none;
+  float: left;
+  text-align: center;
+  line-height: 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #3E3E3E;
+  color: white;
+  margin-right: 5px;
+}
+._main .center .an li:hover {
+  background-color: #C81623;
+}
+._main .center .zuo {
+  width: 25px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 200px;
+  left: 0px;
+  display: none;
+  cursor: pointer;
+}
+._main .center .you {
+  width: 25px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 200px;
+  left: 698px;
+  display: none;
+  cursor: pointer;
+}
+._main .center:hover .zuo,
+._main .center:hover .you {
+  display: block;
+}
+.todytj {
+  height: 150px;
+}
+.todytj .times {
+  width: 220px;
+  height: 150px;
+  background-image: url('images/homebg.png');
+  background-position: -220px -150px;
+  background-size: 445px 307px;
+}
+.todytj .lz {
+  float: left;
+  position: relative;
+  top: -150px;
+  left: 220px;
+}
+.todytj .lz .rq {
+  width: 995px;
+  overflow: hidden;
+  position: relative;
+}
+.todytj .lz .rq ._l {
+  width: 30px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  z-index: 10;
+  cursor: pointer;
+  display: none;
+}
+.todytj .lz .rq ._r {
+  width: 30px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  z-index: 10;
+  cursor: pointer;
+  display: none;
+}
+.todytj .lz .rq ul {
+  position: relative;
+  width: 9999px;
+}
+.todytj .lz .rq ul li {
+  list-style: none;
+  float: left;
+  margin-right: 1px;
+}
+.todytj .lz .rq ul li img {
+  width: 248px;
+}
+.like {
+  margin-bottom: -50px;
+  margin-top: 45px;
+  position: relative;
+}
+.like .redl {
+  position: absolute;
+  width: 370px;
+  height: 15px;
+  background-image: url('images/homebg.png');
+  background-position: 0 -120px;
+  top: 22px;
+  left: -500px;
+}
+.like .title {
+  margin-bottom: 10px;
+  position: relative;
+  color: black;
+}
+.like .title .wz {
+  font-size: 20px;
+  position: absolute;
+  left: 0px;
+}
+.like .title .xh {
+  width: 220px;
+  height: 30px;
+  display: inline-block;
+  background-image: url('images/homebg.png');
+  background-repeat: no-repeat;
+  background-position: 0 -90px;
+  position: absolute;
+  left: 85px;
+  top: -8px;
+}
+.like .title a {
+  color: #666;
+  margin-left: 150px;
+}
+.like .title .hyp {
+  width: 30px;
+  height: 30px;
+  background-image: url('images/homebg.png');
+  background-position: -350px 0;
+  display: inline-block;
+  position: absolute;
+  bottom: -5px;
+}
+.like .title .h:hover {
+  cursor: pointer;
+}
+.like .title .h:hover a {
+  color: #C81623;
+  text-decoration: none;
+}
+.like .title .h:hover .hyp {
+  background-position: -350px -24px;
+}
+.like .nr ul {
+  border: 1px solid #ccc;
+  height: 246px;
+}
+.like .nr ul .b {
+  display: inline-block;
+  top: -80px;
+  height: 70px;
+  border-right: 1px solid #ccc;
+  width: 0px;
+  margin-left: 180px;
+  position: relative;
+  z-index: 10;
+}
+.like .nr ul li {
+  list-style: none;
+  float: left;
+  width: 205px;
+  text-align: center;
+  padding-top: 30px;
+}
+.like .nr ul li .ms a {
+  color: #666666;
+}
+.like .nr ul li .ms a:hover {
+  color: #C81623 ;
+  text-decoration: none;
+}
+.like .nr ul li .money {
+  color: #C81623;
+  font-size: 20px;
+}
+.like .nr ul li img {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.like .nr ul li p {
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.like .nr ul .l1 {
+  margin-left: -995px;
+}
+.like .nr ul .l1 .b {
+  top: -81px;
+}
+.like .nr ul .l1 .money {
+  margin-top: 28px;
+}
+.like .nr ul .l2 {
+  margin-left: -792px;
+}
+.like .nr ul .l3 {
+  margin-left: -590px;
+}
+.like .nr ul .l4 {
+  margin-left: -387px;
+}
+.like .nr ul .l5 {
+  margin-left: -190px;
+}
+.like .nr ul .l6 {
+  margin-left: -2px;
+}
+.like .nr ul .l6 .b {
+  border: none;
+}
+.pzsh {
+  margin-bottom: 20px;
+}
+.pzsh h3 {
+  position: relative;
+  left: -200px;
+  margin-bottom: 3px;
+}
+.pzsh h3,
+.pzsh .black,
+.pzsh h4,
+.pzsh .t {
+  color: #333333;
+}
+.pzsh h4,
+.pzsh .t {
+  font-weight: bold;
+}
+.pzsh ._l,
+.pzsh ._c,
+.pzsh ._r,
+.pzsh .zuo {
+  border-right: 1px solid #EDEDED;
+}
+.pzsh ._l img,
+.pzsh ._c img,
+.pzsh ._r img,
+.pzsh .zuo img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.pzsh ._l p {
+  margin-bottom: 0px;
+}
+.pzsh ._l,
+.pzsh ._r {
+  width: 402px;
+}
+.pzsh .show1,
+.pzsh .show2,
+.pzsh .zuo,
+.pzsh .you {
+  position: relative;
+}
+.pzsh .show1 {
+  border-bottom: 1px solid #EDEDED;
+  height: 200px;
+  padding-top: 50px ;
+  overflow: hidden;
+}
+.pzsh .show2 {
+  height: 160px;
+}
+.pzsh .shang {
+  background-color: #F7F7F7;
+}
+.pzsh ._l .show1,
+.pzsh ._r .show1 {
+  padding-left: 40px;
+}
+.pzsh .zuo,
+.pzsh .you {
+  padding-left: 15px;
+  height: 160px;
+}
+.pzsh ._c .show1,
+.pzsh ._c .show2 {
+  padding-left: 15px;
+}
+.pzsh .zuo,
+.pzsh .you {
+  width: 50%;
+  padding-top: 40px;
+}
+.pzsh .red {
+  color: #c81623;
+}
+.pzsh .t {
+  border-bottom: 1px solid #ccc;
+  border-bottom-style: dashed;
+  width: 80%;
+  text-align: center;
+  margin-left: 10%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+}
+.pzsh ._c {
+  width: 230px;
+  height: 400px;
+}
+.pzsh ._c .show2 {
+  padding-top: 40px;
+}
+.pzsh .nr {
+  cursor: pointer;
+  border: 1px solid #EDEDED;
+  height: 400px;
+}
+.pzsh .nr .ul li {
+  border-right: 1px solid #ccc;
+  border-right-style: dashed;
+}
+.pzsh .nr ul {
+  list-style: none;
+}
+.pzsh .nr ul .las {
+  border-bottom: none;
+}
+.pzsh .nr ul li {
+  border-bottom: 1px solid #ccc;
+  overflow: hidden;
+  height: 55px;
+  border-bottom-style: dashed;
+}
+.pzsh .nr ._b {
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-right: 2px;
+}
+.tp0 img {
+  width: 33.333%;
+  margin-right: -3px;
+  cursor: pointer;
+}
+.section1 {
+  margin-bottom: 15px;
+}
+.section1 .shang .tb {
+  display: inline-block;
+  width: 40px;
+  height: 25px;
+  position: relative;
+  font-size: 10px;
+  line-height: 25px;
+  padding-left: 3px;
+  padding-top: 2px;
+  color: white;
+  background-image: url('images/product_home_1.0.0.png');
+}
+.section1 .shang h3 {
+  color: #333;
+}
+.section1 .shang .daohang {
+  z-index: 1;
+  border-bottom: none;
+  position: relative;
+  bottom: -16px;
+}
+.section1 .shang .daohang ul .first {
+  border: 1px solid #C81623;
+  border-top: 2px solid #C81623;
+  border-bottom: 1px solid white;
+}
+.section1 .shang .daohang ul .first a {
+  border-right: none;
+}
+.section1 .shang .daohang ul .last {
+  border-right: 1px solid #ccc;
+}
+.section1 .shang .daohang ul .last a {
+  border-right: none;
+}
+.section1 .shang .daohang ul li {
+  border-top: 1px solid #ccc;
+  list-style: none;
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+.section1 .shang .daohang ul li a {
+  color: #666;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-right: 1px solid #ccc;
+}
+.section1 .shang .daohang ul li a:hover {
+  color: #C81623;
+  text-decoration: none;
+}
+.section1 .xia .container {
+  border-top: 1px solid #C81623;
+  position: relative;
+}
+.section1 .xia .container .fix ._t {
+  position: relative;
+}
+.section1 .xia .container .fix ._t .c1 {
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.5);
+  bottom: 135px;
+  width: 27.2%;
+}
+.section1 .xia .container .fix ._t .c1 ul {
+  width: 100%;
+  list-style: none;
+  padding-left: 15px;
+}
+.section1 .xia .container .fix ._t .c1 ul li {
+  float: left;
+  width: 33.333%;
+  height: 45px ;
+  line-height: 45px;
+  padding-left: 10px;
+  margin-right: -10px;
+}
+.section1 .xia .container .fix ._t .c1 ul li span {
+  position: relative;
+  top: 8px;
+  margin-right: 5px;
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  background-image: url('images/clothesicon.png');
+}
+.section1 .xia .container .fix ._t .c1 ul li .s2 {
+  background-position: 0 -26px;
+}
+.section1 .xia .container .fix ._t .c1 ul li .s3 {
+  background-position: 0 -52px;
+}
+.section1 .xia .container .fix ._t .c1 ul li .s4 {
+  background-position: 0 -78px;
+}
+.section1 .xia .container .fix ._t .c1 ul li .s5 {
+  background-position: 0 -104px;
+}
+.section1 .xia .container .fix ._t .c1 ul li .s6 {
+  background-position: 0 -130px;
+}
+.section1 .xia .container .fix ._t .c1 ul li a {
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+.section1 .xia .container .fix ._t .c1 ul li a:hover {
+  color: #C81623;
+  text-decoration: none;
+}
+.section1 .xia .container .fix ._t .c2 {
+  padding-top: 20px;
+  padding-bottom: 5px;
+  padding-left: 27px;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.7);
+  bottom: 0px;
+  width: 27.2%;
+}
+.section1 .xia .container .fix ._t .c2 .hot {
+  color: #c81623;
+}
+.section1 .xia .container .fix ._t .c2 ul {
+  margin-right: 42px;
+}
+.section1 .xia .container .fix ._t .c2 li {
+  list-style: none;
+  height: 25px;
+  line-height: 25px;
+}
+.section1 .xia .container .fix ._t .c2 a {
+  color: #999;
+  padding-right: 5px;
+}
+.section1 .xia .container .fix ._t .c2 a:hover {
+  color: #C81623;
+  text-decoration: none;
+}
+.section1 .xia .container .nr {
+  position: absolute;
+  width: 72.9%;
+  right: 0;
+  top: 0;
+}
+.section1 .xia .container .nr .rq {
+  position: relative;
+}
+.section1 .xia .container .nr .rq > ul {
+  display: none;
+  position: absolute;
+}
+.section1 .xia .container .nr .rq .u1 {
+  display: block;
+  width: 100%;
+  height: 50px;
+}
+.section1 .xia .container .nr .rq .u1 > div > div {
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  cursor: pointer;
+}
+.section1 .xia .container .nr .rq .u1 ._l {
+  width: 445px;
+}
+.section1 .xia .container .nr .rq .u1 ._l img {
+  width: 100%;
+  height: 100%;
+}
+.section1 .xia .container .nr .rq .u1 ._l ._t {
+  height: 158px;
+}
+.section1 .xia .container .nr .rq .u1 ._l ._c {
+  overflow: hidden;
+  height: 316px;
+  position: relative;
+  text-align: center;
+}
+.section1 .xia .container .nr .rq .u1 ._l ._c .imgs img {
+  position: absolute;
+  top: 0;
+}
+.section1 .xia .container .nr .rq .u1 ._l ._c .tags {
+  position: absolute;
+  bottom: 10px;
+  left: 200px;
+  z-index: 10;
+}
+.section1 .xia .container .nr .rq .u1 ._l ._c .tags li {
+  list-style: none;
+  width: 10px ;
+  height: 10px;
+  border-radius: 10px;
+  float: left;
+  margin-right: 5px;
+  background-color: #333;
+}
+.section1 .xia .container .nr .rq .u1 ._l ._c .zuo {
+  width: 25px;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  top: 40%;
+}
+.section1 .xia .container .nr .rq .u1 ._l ._c .you {
+  width: 25px;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  top: 40%;
+}
+.section1 .xia .container .nr .rq .u1 ._l ._b {
+  height: 158px;
+  overflow: hidden;
+}
+.section1 .xia .container .nr .rq .u {
+  width: 100%;
+}
+.section1 .xia .container .nr .rq .u a {
+  color: #666666;
+}
+.section1 .xia .container .nr .rq .u a:hover {
+  color: #C81623;
+  text-decoration: none;
+}
+.section1 .xia .container .nr .rq .u img {
+  cursor: pointer;
+}
+.section1 .xia .container .nr .rq .u .shang {
+  height: 237.5px;
+  padding-top: 20px;
+  padding-left: 18px;
+  padding-right: 18px;
+  position: relative;
+}
+.section1 .xia .container .nr .rq .u .shang img {
+  margin-bottom: 10px;
+}
+.section1 .xia .container .nr .rq .u > div {
+  width: 25%;
+}
+.section1 .xia .container .nr .rq .u > div div {
+  text-align: center;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #cccccc;
+}
+.section1 .xia .container .nr .rq .u > div div p {
+  text-align: left;
+}
+.section1 .xia .container .nr .rq .u > div div .money {
+  position: absolute;
+  bottom: 5px;
+  color: #C81623;
+  font-size: 14px;
+}
+.section2 {
+  margin-bottom: 15px;
+}
+.section2 .shang .tb {
+  display: inline-block;
+  width: 40px;
+  height: 25px;
+  position: relative;
+  font-size: 10px;
+  line-height: 25px;
+  padding-left: 3px;
+  padding-top: 2px;
+  color: white;
+  background-image: url('images/product_home_1.0.0.png');
+}
+.section2 .shang h3 {
+  color: #333;
+}
+.section2 .shang .daohang {
+  z-index: 1;
+  border-bottom: none;
+  position: relative;
+  bottom: -16px;
+}
+.section2 .shang .daohang ul .first {
+  border: 1px solid #C81623;
+  border-top: 2px solid #C81623;
+  border-bottom: 1px solid white;
+}
+.section2 .shang .daohang ul .first a {
+  border-right: none;
+}
+.section2 .shang .daohang ul .last {
+  border-right: 1px solid #ccc;
+}
+.section2 .shang .daohang ul .last a {
+  border-right: none;
+}
+.section2 .shang .daohang ul li {
+  border-top: 1px solid #ccc;
+  list-style: none;
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+.section2 .shang .daohang ul li a {
+  color: #666;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-right: 1px solid #ccc;
+}
+.section2 .shang .daohang ul li a:hover {
+  color: #C81623;
+  text-decoration: none;
+}
+.section2 .xia .container {
+  border-top: 1px solid #C81623;
+  position: relative;
+}
+.section2 .xia .container .fix ._t {
+  position: relative;
+}
+.section2 .xia .container .fix ._t .c1 {
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.5);
+  bottom: 135px;
+  width: 17.4%;
+}
+.section2 .xia .container .fix ._t .c1 ul {
+  width: 100%;
+  list-style: none;
+}
+.section2 .xia .container .fix ._t .c1 ul li {
+  float: left;
+  width: 50%;
+  height: 45px ;
+  line-height: 45px;
+  padding-left: 10px;
+}
+.section2 .xia .container .fix ._t .c1 ul li span {
+  position: relative;
+  top: 8px;
+  margin-right: 5px;
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  background-image: url('images/clothesicon.png');
+}
+.section2 .xia .container .fix ._t .c1 ul li .s2 {
+  background-position: 0 -26px;
+}
+.section2 .xia .container .fix ._t .c1 ul li .s3 {
+  background-position: 0 -52px;
+}
+.section2 .xia .container .fix ._t .c1 ul li .s4 {
+  background-position: 0 -78px;
+}
+.section2 .xia .container .fix ._t .c1 ul li .s5 {
+  background-position: 0 -104px;
+}
+.section2 .xia .container .fix ._t .c1 ul li .s6 {
+  background-position: 0 -130px;
+}
+.section2 .xia .container .fix ._t .c1 ul li a {
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+.section2 .xia .container .fix ._t .c1 ul li a:hover {
+  color: #C81623;
+  text-decoration: none;
+}
+.section2 .xia .container .fix ._t .c2 {
+  padding-top: 20px;
+  padding-bottom: 5px;
+  padding-left: 27px;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.7);
+  bottom: 0px;
+  width: 27.2%;
+}
+.section2 .xia .container .fix ._t .c2 .hot {
+  color: #c81623;
+}
+.section2 .xia .container .fix ._t .c2 ul {
+  margin-right: 42px;
+}
+.section2 .xia .container .fix ._t .c2 li {
+  list-style: none;
+  height: 25px;
+  line-height: 25px;
+}
+.section2 .xia .container .fix ._t .c2 a {
+  color: #999;
+  padding-right: 5px;
+}
+.section2 .xia .container .fix ._t .c2 a:hover {
+  color: #C81623;
+  text-decoration: none;
+}
+.section2 .xia .container .nr {
+  position: absolute;
+  z-index: 10;
+  width: 83%;
+  right: 0;
+  top: 0;
+}
+.section2 .xia .container .nr .rq {
+  position: relative;
+}
+.section2 .xia .container .nr .rq > ul {
+  display: none;
+  position: absolute;
+}
+.section2 .xia .container .nr .rq .u1 {
+  display: block;
+  width: 100%;
+  height: 50px;
+}
+.section2 .xia .container .nr .rq .u1 > div > div {
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  cursor: pointer;
+}
+.section2 .xia .container .nr .rq .u1 ._l {
+  width: 358px;
+}
+.section2 .xia .container .nr .rq .u1 ._l img {
+  width: 100%;
+  height: 100%;
+}
+.section2 .xia .container .nr .rq .u1 ._l ._c {
+  overflow: hidden;
+  height: 475px;
+  position: relative;
+  text-align: center;
+}
+.section2 .xia .container .nr .rq .u1 ._l ._c .imgs li {
+  position: absolute;
+  top: 0;
+}
+.section2 .xia .container .nr .rq .u1 ._l ._c .imgs li img {
+  border-bottom: 1px solid #eee;
+}
+.section2 .xia .container .nr .rq .u1 ._l ._c .tags {
+  position: absolute;
+  bottom: 10px;
+  left: 200px;
+  z-index: 10;
+}
+.section2 .xia .container .nr .rq .u1 ._l ._c .tags li {
+  list-style: none;
+  width: 10px ;
+  height: 10px;
+  border-radius: 10px;
+  float: left;
+  margin-right: 5px;
+  background-color: #333;
+}
+.section2 .xia .container .nr .rq .u1 ._l ._c .zuo {
+  width: 25px;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  top: 40%;
+}
+.section2 .xia .container .nr .rq .u1 ._l ._c .you {
+  width: 25px;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  top: 40%;
+}
+.section2 .xia .container .nr .rq .u1 ._l ._b {
+  height: 158px;
+  overflow: hidden;
+}
+.section2 .xia .container .nr .rq .u1 ._z img {
+  margin-right: -5px;
+}
+.section2 .xia .container .nr .rq .u {
+  width: 100%;
+}
+.section2 .xia .container .nr .rq .u a {
+  color: #666666;
+}
+.section2 .xia .container .nr .rq .u a:hover {
+  color: #C81623;
+  text-decoration: none;
+}
+.section2 .xia .container .nr .rq .u img {
+  cursor: pointer;
+}
+.section2 .xia .container .nr .rq .u .shang {
+  height: 237.5px;
+  padding-top: 20px;
+  padding-left: 18px;
+  padding-right: 18px;
+  position: relative;
+}
+.section2 .xia .container .nr .rq .u .shang img {
+  margin-bottom: 10px;
+}
+.section2 .xia .container .nr .rq .u > div {
+  width: 25%;
+}
+.section2 .xia .container .nr .rq .u > div div {
+  text-align: center;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #cccccc;
+}
+.section2 .xia .container .nr .rq .u > div div p {
+  text-align: left;
+}
+.section2 .xia .container .nr .rq .u > div div .money {
+  position: absolute;
+  bottom: 5px;
+  color: #C81623;
+  font-size: 14px;
+}
+.section3,
+.section4,
+.section5,
+.sections3 {
+  margin-bottom: 15px;
+}
+.section3 .shang .tb,
+.section4 .shang .tb,
+.section5 .shang .tb,
+.sections3 .shang .tb {
+  display: inline-block;
+  width: 40px;
+  height: 25px;
+  position: relative;
+  font-size: 10px;
+  line-height: 25px;
+  padding-left: 3px;
+  padding-top: 2px;
+  color: white;
+  background-image: url('images/product_home_1.0.0.png');
+}
+.section3 .shang h3,
+.section4 .shang h3,
+.section5 .shang h3,
+.sections3 .shang h3 {
+  color: #333;
+}
+.section3 .shang .daohang,
+.section4 .shang .daohang,
+.section5 .shang .daohang,
+.sections3 .shang .daohang {
+  z-index: 1;
+  border-bottom: none;
+  position: relative;
+  bottom: -16px;
+}
+.section3 .shang .daohang ul .first,
+.section4 .shang .daohang ul .first,
+.section5 .shang .daohang ul .first,
+.sections3 .shang .daohang ul .first {
+  border: 1px solid #C81623;
+  border-top: 2px solid #C81623;
+  border-bottom: 1px solid white;
+}
+.section3 .shang .daohang ul .first a,
+.section4 .shang .daohang ul .first a,
+.section5 .shang .daohang ul .first a,
+.sections3 .shang .daohang ul .first a {
+  border-right: none;
+}
+.section3 .shang .daohang ul .last,
+.section4 .shang .daohang ul .last,
+.section5 .shang .daohang ul .last,
+.sections3 .shang .daohang ul .last {
+  border-right: 1px solid #ccc;
+}
+.section3 .shang .daohang ul .last a,
+.section4 .shang .daohang ul .last a,
+.section5 .shang .daohang ul .last a,
+.sections3 .shang .daohang ul .last a {
+  border-right: none;
+}
+.section3 .shang .daohang ul li,
+.section4 .shang .daohang ul li,
+.section5 .shang .daohang ul li,
+.sections3 .shang .daohang ul li {
+  border-top: 1px solid #ccc;
+  list-style: none;
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+.section3 .shang .daohang ul li a,
+.section4 .shang .daohang ul li a,
+.section5 .shang .daohang ul li a,
+.sections3 .shang .daohang ul li a {
+  color: #666;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-right: 1px solid #ccc;
+}
+.section3 .shang .daohang ul li a:hover,
+.section4 .shang .daohang ul li a:hover,
+.section5 .shang .daohang ul li a:hover,
+.sections3 .shang .daohang ul li a:hover {
+  color: #C81623;
+  text-decoration: none;
+}
+.section3 .xia .container,
+.section4 .xia .container,
+.section5 .xia .container,
+.sections3 .xia .container {
+  border-top: 1px solid #C81623;
+  position: relative;
+}
+.section3 .xia .container .fix ._t,
+.section4 .xia .container .fix ._t,
+.section5 .xia .container .fix ._t,
+.sections3 .xia .container .fix ._t {
+  position: relative;
+}
+.section3 .xia .container .fix ._t .c1,
+.section4 .xia .container .fix ._t .c1,
+.section5 .xia .container .fix ._t .c1,
+.sections3 .xia .container .fix ._t .c1 {
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.5);
+  bottom: 193px;
+  width: 27.2%;
+}
+.section3 .xia .container .fix ._t .c1 ul,
+.section4 .xia .container .fix ._t .c1 ul,
+.section5 .xia .container .fix ._t .c1 ul,
+.sections3 .xia .container .fix ._t .c1 ul {
+  width: 100%;
+  list-style: none;
+  padding-left: 15px;
+}
+.section3 .xia .container .fix ._t .c1 ul li,
+.section4 .xia .container .fix ._t .c1 ul li,
+.section5 .xia .container .fix ._t .c1 ul li,
+.sections3 .xia .container .fix ._t .c1 ul li {
+  float: left;
+  height: 45px ;
+  line-height: 45px;
+  padding-left: 10px;
+  margin-right: -10px;
+}
+.section3 .xia .container .fix ._t .c1 ul li span,
+.section4 .xia .container .fix ._t .c1 ul li span,
+.section5 .xia .container .fix ._t .c1 ul li span,
+.sections3 .xia .container .fix ._t .c1 ul li span {
+  position: relative;
+  top: 8px;
+  margin-right: 5px;
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  background-image: url('images/clothesicon.png');
+}
+.section3 .xia .container .fix ._t .c1 ul li .s2,
+.section4 .xia .container .fix ._t .c1 ul li .s2,
+.section5 .xia .container .fix ._t .c1 ul li .s2,
+.sections3 .xia .container .fix ._t .c1 ul li .s2 {
+  background-position: 0 -26px;
+}
+.section3 .xia .container .fix ._t .c1 ul li .s3,
+.section4 .xia .container .fix ._t .c1 ul li .s3,
+.section5 .xia .container .fix ._t .c1 ul li .s3,
+.sections3 .xia .container .fix ._t .c1 ul li .s3 {
+  background-position: 0 -52px;
+}
+.section3 .xia .container .fix ._t .c1 ul li .s4,
+.section4 .xia .container .fix ._t .c1 ul li .s4,
+.section5 .xia .container .fix ._t .c1 ul li .s4,
+.sections3 .xia .container .fix ._t .c1 ul li .s4 {
+  background-position: 0 -78px;
+}
+.section3 .xia .container .fix ._t .c1 ul li .s5,
+.section4 .xia .container .fix ._t .c1 ul li .s5,
+.section5 .xia .container .fix ._t .c1 ul li .s5,
+.sections3 .xia .container .fix ._t .c1 ul li .s5 {
+  background-position: 0 -104px;
+}
+.section3 .xia .container .fix ._t .c1 ul li .s6,
+.section4 .xia .container .fix ._t .c1 ul li .s6,
+.section5 .xia .container .fix ._t .c1 ul li .s6,
+.sections3 .xia .container .fix ._t .c1 ul li .s6 {
+  background-position: 0 -130px;
+}
+.section3 .xia .container .fix ._t .c1 ul li a,
+.section4 .xia .container .fix ._t .c1 ul li a,
+.section5 .xia .container .fix ._t .c1 ul li a,
+.sections3 .xia .container .fix ._t .c1 ul li a {
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+.section3 .xia .container .fix ._t .c1 ul li a:hover,
+.section4 .xia .container .fix ._t .c1 ul li a:hover,
+.section5 .xia .container .fix ._t .c1 ul li a:hover,
+.sections3 .xia .container .fix ._t .c1 ul li a:hover {
+  color: #C81623;
+  text-decoration: none;
+}
+.section3 .xia .container .fix ._t .c2,
+.section4 .xia .container .fix ._t .c2,
+.section5 .xia .container .fix ._t .c2,
+.sections3 .xia .container .fix ._t .c2 {
+  padding-top: 20px;
+  padding-bottom: 13px;
+  padding-left: 27px;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.7);
+  bottom: 0px;
+  width: 27.2%;
+}
+.section3 .xia .container .fix ._t .c2 .ttt,
+.section4 .xia .container .fix ._t .c2 .ttt,
+.section5 .xia .container .fix ._t .c2 .ttt,
+.sections3 .xia .container .fix ._t .c2 .ttt {
+  font-style: 17px;
+  font-weight: bold;
+}
+.section3 .xia .container .fix ._t .c2 .ttt a,
+.section4 .xia .container .fix ._t .c2 .ttt a,
+.section5 .xia .container .fix ._t .c2 .ttt a,
+.sections3 .xia .container .fix ._t .c2 .ttt a {
+  color: #777777;
+}
+.section3 .xia .container .fix ._t .c2 .hot,
+.section4 .xia .container .fix ._t .c2 .hot,
+.section5 .xia .container .fix ._t .c2 .hot,
+.sections3 .xia .container .fix ._t .c2 .hot {
+  color: #c81623;
+}
+.section3 .xia .container .fix ._t .c2 li,
+.section4 .xia .container .fix ._t .c2 li,
+.section5 .xia .container .fix ._t .c2 li,
+.sections3 .xia .container .fix ._t .c2 li {
+  list-style: none;
+  height: 25px;
+  line-height: 25px;
+}
+.section3 .xia .container .fix ._t .c2 a,
+.section4 .xia .container .fix ._t .c2 a,
+.section5 .xia .container .fix ._t .c2 a,
+.sections3 .xia .container .fix ._t .c2 a {
+  color: #999;
+  padding-right: 5px;
+}
+.section3 .xia .container .fix ._t .c2 a:hover,
+.section4 .xia .container .fix ._t .c2 a:hover,
+.section5 .xia .container .fix ._t .c2 a:hover,
+.sections3 .xia .container .fix ._t .c2 a:hover {
+  color: #C81623;
+  text-decoration: none;
+}
+.section3 .xia .container .nr,
+.section4 .xia .container .nr,
+.section5 .xia .container .nr,
+.sections3 .xia .container .nr {
+  position: absolute;
+  width: 72.9%;
+  right: 0;
+  top: 0;
+}
+.section3 .xia .container .nr .rq,
+.section4 .xia .container .nr .rq,
+.section5 .xia .container .nr .rq,
+.sections3 .xia .container .nr .rq {
+  position: relative;
+}
+.section3 .xia .container .nr .rq > ul,
+.section4 .xia .container .nr .rq > ul,
+.section5 .xia .container .nr .rq > ul,
+.sections3 .xia .container .nr .rq > ul {
+  display: none;
+  position: absolute;
+}
+.section3 .xia .container .nr .rq .u1,
+.section4 .xia .container .nr .rq .u1,
+.section5 .xia .container .nr .rq .u1,
+.sections3 .xia .container .nr .rq .u1 {
+  display: block;
+  width: 100%;
+  height: 50px;
+}
+.section3 .xia .container .nr .rq .u1 > div > div,
+.section4 .xia .container .nr .rq .u1 > div > div,
+.section5 .xia .container .nr .rq .u1 > div > div,
+.sections3 .xia .container .nr .rq .u1 > div > div {
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  cursor: pointer;
+}
+.section3 .xia .container .nr .rq .u1 ._l,
+.section4 .xia .container .nr .rq .u1 ._l,
+.section5 .xia .container .nr .rq .u1 ._l,
+.sections3 .xia .container .nr .rq .u1 ._l {
+  width: 445px;
+}
+.section3 .xia .container .nr .rq .u1 ._l img,
+.section4 .xia .container .nr .rq .u1 ._l img,
+.section5 .xia .container .nr .rq .u1 ._l img,
+.sections3 .xia .container .nr .rq .u1 ._l img {
+  width: 100%;
+  height: 100%;
+}
+.section3 .xia .container .nr .rq .u1 ._l ._c,
+.section4 .xia .container .nr .rq .u1 ._l ._c,
+.section5 .xia .container .nr .rq .u1 ._l ._c,
+.sections3 .xia .container .nr .rq .u1 ._l ._c {
+  overflow: hidden;
+  height: 237px;
+  position: relative;
+  text-align: center;
+}
+.section3 .xia .container .nr .rq .u1 ._l ._c .imgs img,
+.section4 .xia .container .nr .rq .u1 ._l ._c .imgs img,
+.section5 .xia .container .nr .rq .u1 ._l ._c .imgs img,
+.sections3 .xia .container .nr .rq .u1 ._l ._c .imgs img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.section3 .xia .container .nr .rq .u1 ._l ._c .tags,
+.section4 .xia .container .nr .rq .u1 ._l ._c .tags,
+.section5 .xia .container .nr .rq .u1 ._l ._c .tags,
+.sections3 .xia .container .nr .rq .u1 ._l ._c .tags {
+  position: absolute;
+  bottom: 10px;
+  left: 200px;
+  z-index: 10;
+}
+.section3 .xia .container .nr .rq .u1 ._l ._c .tags li,
+.section4 .xia .container .nr .rq .u1 ._l ._c .tags li,
+.section5 .xia .container .nr .rq .u1 ._l ._c .tags li,
+.sections3 .xia .container .nr .rq .u1 ._l ._c .tags li {
+  list-style: none;
+  width: 10px ;
+  height: 10px;
+  border-radius: 10px;
+  float: left;
+  margin-right: 5px;
+  background-color: #333;
+}
+.section3 .xia .container .nr .rq .u1 ._l ._c .zuo,
+.section4 .xia .container .nr .rq .u1 ._l ._c .zuo,
+.section5 .xia .container .nr .rq .u1 ._l ._c .zuo,
+.sections3 .xia .container .nr .rq .u1 ._l ._c .zuo {
+  width: 25px;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  top: 40%;
+}
+.section3 .xia .container .nr .rq .u1 ._l ._c .you,
+.section4 .xia .container .nr .rq .u1 ._l ._c .you,
+.section5 .xia .container .nr .rq .u1 ._l ._c .you,
+.sections3 .xia .container .nr .rq .u1 ._l ._c .you {
+  width: 25px;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  top: 40%;
+}
+.section3 .xia .container .nr .rq .u1 ._l ._b,
+.section4 .xia .container .nr .rq .u1 ._l ._b,
+.section5 .xia .container .nr .rq .u1 ._l ._b,
+.sections3 .xia .container .nr .rq .u1 ._l ._b {
+  height: 235px;
+  overflow: hidden;
+  position: relative;
+}
+.section3 .xia .container .nr .rq .u1 ._l ._b .zzz,
+.section4 .xia .container .nr .rq .u1 ._l ._b .zzz,
+.section5 .xia .container .nr .rq .u1 ._l ._b .zzz,
+.sections3 .xia .container .nr .rq .u1 ._l ._b .zzz {
+  border-right: none;
+  position: absolute;
+  right: 0;
+  width: 50%;
+}
+.section3 .xia .container .nr .rq .u1 ._l ._b img,
+.section4 .xia .container .nr .rq .u1 ._l ._b img,
+.section5 .xia .container .nr .rq .u1 ._l ._b img,
+.sections3 .xia .container .nr .rq .u1 ._l ._b img {
+  border-right: 1px solid #ccc;
+  width: 50%;
+}
+.section3 .xia .container .nr .rq .u,
+.section4 .xia .container .nr .rq .u,
+.section5 .xia .container .nr .rq .u,
+.sections3 .xia .container .nr .rq .u {
+  width: 100%;
+}
+.section3 .xia .container .nr .rq .u a,
+.section4 .xia .container .nr .rq .u a,
+.section5 .xia .container .nr .rq .u a,
+.sections3 .xia .container .nr .rq .u a {
+  color: #666666;
+}
+.section3 .xia .container .nr .rq .u a:hover,
+.section4 .xia .container .nr .rq .u a:hover,
+.section5 .xia .container .nr .rq .u a:hover,
+.sections3 .xia .container .nr .rq .u a:hover {
+  color: #C81623;
+  text-decoration: none;
+}
+.section3 .xia .container .nr .rq .u img,
+.section4 .xia .container .nr .rq .u img,
+.section5 .xia .container .nr .rq .u img,
+.sections3 .xia .container .nr .rq .u img {
+  cursor: pointer;
+}
+.section3 .xia .container .nr .rq .u .shang,
+.section4 .xia .container .nr .rq .u .shang,
+.section5 .xia .container .nr .rq .u .shang,
+.sections3 .xia .container .nr .rq .u .shang {
+  height: 237.5px;
+  padding-top: 20px;
+  padding-left: 18px;
+  padding-right: 18px;
+  position: relative;
+}
+.section3 .xia .container .nr .rq .u .shang img,
+.section4 .xia .container .nr .rq .u .shang img,
+.section5 .xia .container .nr .rq .u .shang img,
+.sections3 .xia .container .nr .rq .u .shang img {
+  margin-bottom: 10px;
+}
+.section3 .xia .container .nr .rq .u > div,
+.section4 .xia .container .nr .rq .u > div,
+.section5 .xia .container .nr .rq .u > div,
+.sections3 .xia .container .nr .rq .u > div {
+  width: 25%;
+}
+.section3 .xia .container .nr .rq .u > div div,
+.section4 .xia .container .nr .rq .u > div div,
+.section5 .xia .container .nr .rq .u > div div,
+.sections3 .xia .container .nr .rq .u > div div {
+  text-align: center;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #cccccc;
+}
+.section3 .xia .container .nr .rq .u > div div p,
+.section4 .xia .container .nr .rq .u > div div p,
+.section5 .xia .container .nr .rq .u > div div p,
+.sections3 .xia .container .nr .rq .u > div div p {
+  text-align: left;
+}
+.section3 .xia .container .nr .rq .u > div div .money,
+.section4 .xia .container .nr .rq .u > div div .money,
+.section5 .xia .container .nr .rq .u > div div .money,
+.sections3 .xia .container .nr .rq .u > div div .money {
+  position: absolute;
+  bottom: 5px;
+  color: #C81623;
+  font-size: 14px;
+}
+.section3 .ll,
+.sections3 .ll {
+  margin-right: 30px;
+}
+.section3 .c1 li,
+.sections3 .c1 li {
+  width: 33.333%;
+}
+.section3 .c2 ul,
+.sections3 .c2 ul {
+  margin-right: 42px;
+}
+.section4,
+.section5 {
+  margin-top: 15px;
+}
+.section4 .c1 li,
+.section5 .c1 li {
+  width: 50%;
+}
+.section4 .c2 ul,
+.section5 .c2 ul {
+  margin-right: 20px;
+}
+.section4 .ll,
+.section5 .ll {
+  margin-right: 38px;
+}
+.section5 {
+  margin-top: 15px;
+}
+.pur_img {
+  margin-top: 20px;
+  padding-left: 5px;
+}
+.pur_img img {
+  margin-right: -5px;
+}
+.section6,
+.section7,
+.section8,
+.section9 {
+  margin-bottom: 15px;
+}
+.section6 .shang .tb,
+.section7 .shang .tb,
+.section8 .shang .tb,
+.section9 .shang .tb {
+  display: inline-block;
+  width: 40px;
+  height: 25px;
+  position: relative;
+  font-size: 10px;
+  line-height: 25px;
+  padding-left: 3px;
+  padding-top: 2px;
+  color: white;
+  background-image: url('images/product_home_1.0.0.png');
+}
+.section6 .shang h3,
+.section7 .shang h3,
+.section8 .shang h3,
+.section9 .shang h3 {
+  color: #333;
+}
+.section6 .shang .daohang,
+.section7 .shang .daohang,
+.section8 .shang .daohang,
+.section9 .shang .daohang {
+  z-index: 1;
+  border-bottom: none;
+  position: relative;
+  bottom: -16px;
+}
+.section6 .shang .daohang ul .first,
+.section7 .shang .daohang ul .first,
+.section8 .shang .daohang ul .first,
+.section9 .shang .daohang ul .first {
+  border: 1px solid #C81623;
+  border-top: 2px solid #C81623;
+  border-bottom: 1px solid white;
+}
+.section6 .shang .daohang ul .first a,
+.section7 .shang .daohang ul .first a,
+.section8 .shang .daohang ul .first a,
+.section9 .shang .daohang ul .first a {
+  border-right: none;
+}
+.section6 .shang .daohang ul .last,
+.section7 .shang .daohang ul .last,
+.section8 .shang .daohang ul .last,
+.section9 .shang .daohang ul .last {
+  border-right: 1px solid #ccc;
+}
+.section6 .shang .daohang ul .last a,
+.section7 .shang .daohang ul .last a,
+.section8 .shang .daohang ul .last a,
+.section9 .shang .daohang ul .last a {
+  border-right: none;
+}
+.section6 .shang .daohang ul li,
+.section7 .shang .daohang ul li,
+.section8 .shang .daohang ul li,
+.section9 .shang .daohang ul li {
+  border-top: 1px solid #ccc;
+  list-style: none;
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+.section6 .shang .daohang ul li a,
+.section7 .shang .daohang ul li a,
+.section8 .shang .daohang ul li a,
+.section9 .shang .daohang ul li a {
+  color: #666;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-right: 1px solid #ccc;
+}
+.section6 .shang .daohang ul li a:hover,
+.section7 .shang .daohang ul li a:hover,
+.section8 .shang .daohang ul li a:hover,
+.section9 .shang .daohang ul li a:hover {
+  color: #C81623;
+  text-decoration: none;
+}
+.section6 .xia .container,
+.section7 .xia .container,
+.section8 .xia .container,
+.section9 .xia .container {
+  border-top: 1px solid #C81623;
+  position: relative;
+}
+.section6 .xia .container .fix ._t,
+.section7 .xia .container .fix ._t,
+.section8 .xia .container .fix ._t,
+.section9 .xia .container .fix ._t {
+  position: relative;
+}
+.section6 .xia .container .fix ._t .c1,
+.section7 .xia .container .fix ._t .c1,
+.section8 .xia .container .fix ._t .c1,
+.section9 .xia .container .fix ._t .c1 {
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.5);
+  bottom: 148px;
+  width: 17.4%;
+}
+.section6 .xia .container .fix ._t .c1 ul,
+.section7 .xia .container .fix ._t .c1 ul,
+.section8 .xia .container .fix ._t .c1 ul,
+.section9 .xia .container .fix ._t .c1 ul {
+  width: 100%;
+  list-style: none;
+}
+.section6 .xia .container .fix ._t .c1 ul li,
+.section7 .xia .container .fix ._t .c1 ul li,
+.section8 .xia .container .fix ._t .c1 ul li,
+.section9 .xia .container .fix ._t .c1 ul li {
+  float: left;
+  width: 50%;
+  height: 45px ;
+  line-height: 45px;
+  padding-left: 10px;
+}
+.section6 .xia .container .fix ._t .c1 ul li span,
+.section7 .xia .container .fix ._t .c1 ul li span,
+.section8 .xia .container .fix ._t .c1 ul li span,
+.section9 .xia .container .fix ._t .c1 ul li span {
+  position: relative;
+  top: 8px;
+  margin-right: 5px;
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  background-image: url('images/clothesicon.png');
+}
+.section6 .xia .container .fix ._t .c1 ul li .s2,
+.section7 .xia .container .fix ._t .c1 ul li .s2,
+.section8 .xia .container .fix ._t .c1 ul li .s2,
+.section9 .xia .container .fix ._t .c1 ul li .s2 {
+  background-position: 0 -26px;
+}
+.section6 .xia .container .fix ._t .c1 ul li .s3,
+.section7 .xia .container .fix ._t .c1 ul li .s3,
+.section8 .xia .container .fix ._t .c1 ul li .s3,
+.section9 .xia .container .fix ._t .c1 ul li .s3 {
+  background-position: 0 -52px;
+}
+.section6 .xia .container .fix ._t .c1 ul li .s4,
+.section7 .xia .container .fix ._t .c1 ul li .s4,
+.section8 .xia .container .fix ._t .c1 ul li .s4,
+.section9 .xia .container .fix ._t .c1 ul li .s4 {
+  background-position: 0 -78px;
+}
+.section6 .xia .container .fix ._t .c1 ul li .s5,
+.section7 .xia .container .fix ._t .c1 ul li .s5,
+.section8 .xia .container .fix ._t .c1 ul li .s5,
+.section9 .xia .container .fix ._t .c1 ul li .s5 {
+  background-position: 0 -104px;
+}
+.section6 .xia .container .fix ._t .c1 ul li .s6,
+.section7 .xia .container .fix ._t .c1 ul li .s6,
+.section8 .xia .container .fix ._t .c1 ul li .s6,
+.section9 .xia .container .fix ._t .c1 ul li .s6 {
+  background-position: 0 -130px;
+}
+.section6 .xia .container .fix ._t .c1 ul li a,
+.section7 .xia .container .fix ._t .c1 ul li a,
+.section8 .xia .container .fix ._t .c1 ul li a,
+.section9 .xia .container .fix ._t .c1 ul li a {
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+.section6 .xia .container .fix ._t .c1 ul li a:hover,
+.section7 .xia .container .fix ._t .c1 ul li a:hover,
+.section8 .xia .container .fix ._t .c1 ul li a:hover,
+.section9 .xia .container .fix ._t .c1 ul li a:hover {
+  color: #C81623;
+  text-decoration: none;
+}
+.section6 .xia .container .fix ._t .c2,
+.section7 .xia .container .fix ._t .c2,
+.section8 .xia .container .fix ._t .c2,
+.section9 .xia .container .fix ._t .c2 {
+  padding-top: 33px;
+  padding-bottom: 5px;
+  padding-left: 27px;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.7);
+  bottom: 0px;
+  width: 27.2%;
+}
+.section6 .xia .container .fix ._t .c2 .hot,
+.section7 .xia .container .fix ._t .c2 .hot,
+.section8 .xia .container .fix ._t .c2 .hot,
+.section9 .xia .container .fix ._t .c2 .hot {
+  color: #c81623;
+}
+.section6 .xia .container .fix ._t .c2 ul,
+.section7 .xia .container .fix ._t .c2 ul,
+.section8 .xia .container .fix ._t .c2 ul,
+.section9 .xia .container .fix ._t .c2 ul {
+  margin-right: 42px;
+}
+.section6 .xia .container .fix ._t .c2 li,
+.section7 .xia .container .fix ._t .c2 li,
+.section8 .xia .container .fix ._t .c2 li,
+.section9 .xia .container .fix ._t .c2 li {
+  list-style: none;
+  height: 25px;
+  line-height: 25px;
+}
+.section6 .xia .container .fix ._t .c2 a,
+.section7 .xia .container .fix ._t .c2 a,
+.section8 .xia .container .fix ._t .c2 a,
+.section9 .xia .container .fix ._t .c2 a {
+  color: #999;
+  padding-right: 5px;
+}
+.section6 .xia .container .fix ._t .c2 a:hover,
+.section7 .xia .container .fix ._t .c2 a:hover,
+.section8 .xia .container .fix ._t .c2 a:hover,
+.section9 .xia .container .fix ._t .c2 a:hover {
+  color: #C81623;
+  text-decoration: none;
+}
+.section6 .xia .container .nr,
+.section7 .xia .container .nr,
+.section8 .xia .container .nr,
+.section9 .xia .container .nr {
+  position: absolute;
+  z-index: 10;
+  width: 83%;
+  right: 0;
+  top: 0;
+}
+.section6 .xia .container .nr .rq,
+.section7 .xia .container .nr .rq,
+.section8 .xia .container .nr .rq,
+.section9 .xia .container .nr .rq {
+  position: relative;
+}
+.section6 .xia .container .nr .rq > ul,
+.section7 .xia .container .nr .rq > ul,
+.section8 .xia .container .nr .rq > ul,
+.section9 .xia .container .nr .rq > ul {
+  display: none;
+  position: absolute;
+}
+.section6 .xia .container .nr .rq .u1,
+.section7 .xia .container .nr .rq .u1,
+.section8 .xia .container .nr .rq .u1,
+.section9 .xia .container .nr .rq .u1 {
+  display: block;
+  width: 100%;
+  height: 50px;
+}
+.section6 .xia .container .nr .rq .u1 > div > div,
+.section7 .xia .container .nr .rq .u1 > div > div,
+.section8 .xia .container .nr .rq .u1 > div > div,
+.section9 .xia .container .nr .rq .u1 > div > div {
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  cursor: pointer;
+}
+.section6 .xia .container .nr .rq .u1 .one,
+.section7 .xia .container .nr .rq .u1 .one,
+.section8 .xia .container .nr .rq .u1 .one,
+.section9 .xia .container .nr .rq .u1 .one {
+  width: 220px;
+}
+.section6 .xia .container .nr .rq .u1 .one img,
+.section7 .xia .container .nr .rq .u1 .one img,
+.section8 .xia .container .nr .rq .u1 .one img,
+.section9 .xia .container .nr .rq .u1 .one img {
+  width: 100%;
+}
+.section6 .xia .container .nr .rq .u1 ._l,
+.section7 .xia .container .nr .rq .u1 ._l,
+.section8 .xia .container .nr .rq .u1 ._l,
+.section9 .xia .container .nr .rq .u1 ._l {
+  width: 342px;
+}
+.section6 .xia .container .nr .rq .u1 ._l img,
+.section7 .xia .container .nr .rq .u1 ._l img,
+.section8 .xia .container .nr .rq .u1 ._l img,
+.section9 .xia .container .nr .rq .u1 ._l img {
+  width: 100%;
+  height: 100%;
+}
+.section6 .xia .container .nr .rq .u1 ._l ._c,
+.section7 .xia .container .nr .rq .u1 ._l ._c,
+.section8 .xia .container .nr .rq .u1 ._l ._c,
+.section9 .xia .container .nr .rq .u1 ._l ._c {
+  overflow: hidden;
+  height: 475px;
+  position: relative;
+  text-align: center;
+}
+.section6 .xia .container .nr .rq .u1 ._l ._c .imgs li,
+.section7 .xia .container .nr .rq .u1 ._l ._c .imgs li,
+.section8 .xia .container .nr .rq .u1 ._l ._c .imgs li,
+.section9 .xia .container .nr .rq .u1 ._l ._c .imgs li {
+  position: absolute;
+  top: 0;
+}
+.section6 .xia .container .nr .rq .u1 ._l ._c .imgs li img,
+.section7 .xia .container .nr .rq .u1 ._l ._c .imgs li img,
+.section8 .xia .container .nr .rq .u1 ._l ._c .imgs li img,
+.section9 .xia .container .nr .rq .u1 ._l ._c .imgs li img {
+  border-bottom: 1px solid #eee;
+}
+.section6 .xia .container .nr .rq .u1 ._l ._c .tags,
+.section7 .xia .container .nr .rq .u1 ._l ._c .tags,
+.section8 .xia .container .nr .rq .u1 ._l ._c .tags,
+.section9 .xia .container .nr .rq .u1 ._l ._c .tags {
+  position: absolute;
+  bottom: 10px;
+  left: 200px;
+  z-index: 10;
+}
+.section6 .xia .container .nr .rq .u1 ._l ._c .tags li,
+.section7 .xia .container .nr .rq .u1 ._l ._c .tags li,
+.section8 .xia .container .nr .rq .u1 ._l ._c .tags li,
+.section9 .xia .container .nr .rq .u1 ._l ._c .tags li {
+  list-style: none;
+  width: 10px ;
+  height: 10px;
+  border-radius: 10px;
+  float: left;
+  margin-right: 5px;
+  background-color: #333;
+}
+.section6 .xia .container .nr .rq .u1 ._l ._c .zuo,
+.section7 .xia .container .nr .rq .u1 ._l ._c .zuo,
+.section8 .xia .container .nr .rq .u1 ._l ._c .zuo,
+.section9 .xia .container .nr .rq .u1 ._l ._c .zuo {
+  width: 25px;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  top: 40%;
+}
+.section6 .xia .container .nr .rq .u1 ._l ._c .you,
+.section7 .xia .container .nr .rq .u1 ._l ._c .you,
+.section8 .xia .container .nr .rq .u1 ._l ._c .you,
+.section9 .xia .container .nr .rq .u1 ._l ._c .you {
+  width: 25px;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  top: 40%;
+}
+.section6 .xia .container .nr .rq .u1 ._l ._b,
+.section7 .xia .container .nr .rq .u1 ._l ._b,
+.section8 .xia .container .nr .rq .u1 ._l ._b,
+.section9 .xia .container .nr .rq .u1 ._l ._b {
+  height: 158px;
+  overflow: hidden;
+}
+.section6 .xia .container .nr .rq .u1 ._z,
+.section7 .xia .container .nr .rq .u1 ._z,
+.section8 .xia .container .nr .rq .u1 ._z,
+.section9 .xia .container .nr .rq .u1 ._z {
+  overflow: hidden;
+}
+.section6 .xia .container .nr .rq .u1 ._z img,
+.section7 .xia .container .nr .rq .u1 ._z img,
+.section8 .xia .container .nr .rq .u1 ._z img,
+.section9 .xia .container .nr .rq .u1 ._z img {
+  border-right: 1px solid #ccc;
+}
+.section6 .xia .container .nr .rq .u1 ._z .i2,
+.section7 .xia .container .nr .rq .u1 ._z .i2,
+.section8 .xia .container .nr .rq .u1 ._z .i2,
+.section9 .xia .container .nr .rq .u1 ._z .i2 {
+  border-right: none;
+}
+.section6 .xia .container .nr .rq .u,
+.section7 .xia .container .nr .rq .u,
+.section8 .xia .container .nr .rq .u,
+.section9 .xia .container .nr .rq .u {
+  width: 100%;
+}
+.section6 .xia .container .nr .rq .u a,
+.section7 .xia .container .nr .rq .u a,
+.section8 .xia .container .nr .rq .u a,
+.section9 .xia .container .nr .rq .u a {
+  color: #666666;
+}
+.section6 .xia .container .nr .rq .u a:hover,
+.section7 .xia .container .nr .rq .u a:hover,
+.section8 .xia .container .nr .rq .u a:hover,
+.section9 .xia .container .nr .rq .u a:hover {
+  color: #C81623;
+  text-decoration: none;
+}
+.section6 .xia .container .nr .rq .u img,
+.section7 .xia .container .nr .rq .u img,
+.section8 .xia .container .nr .rq .u img,
+.section9 .xia .container .nr .rq .u img {
+  cursor: pointer;
+}
+.section6 .xia .container .nr .rq .u .shang,
+.section7 .xia .container .nr .rq .u .shang,
+.section8 .xia .container .nr .rq .u .shang,
+.section9 .xia .container .nr .rq .u .shang {
+  height: 237.5px;
+  padding-top: 20px;
+  padding-left: 18px;
+  padding-right: 18px;
+  position: relative;
+}
+.section6 .xia .container .nr .rq .u .shang img,
+.section7 .xia .container .nr .rq .u .shang img,
+.section8 .xia .container .nr .rq .u .shang img,
+.section9 .xia .container .nr .rq .u .shang img {
+  margin-bottom: 10px;
+}
+.section6 .xia .container .nr .rq .u > div,
+.section7 .xia .container .nr .rq .u > div,
+.section8 .xia .container .nr .rq .u > div,
+.section9 .xia .container .nr .rq .u > div {
+  width: 25%;
+}
+.section6 .xia .container .nr .rq .u > div div,
+.section7 .xia .container .nr .rq .u > div div,
+.section8 .xia .container .nr .rq .u > div div,
+.section9 .xia .container .nr .rq .u > div div {
+  text-align: center;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #cccccc;
+}
+.section6 .xia .container .nr .rq .u > div div p,
+.section7 .xia .container .nr .rq .u > div div p,
+.section8 .xia .container .nr .rq .u > div div p,
+.section9 .xia .container .nr .rq .u > div div p {
+  text-align: left;
+}
+.section6 .xia .container .nr .rq .u > div div .money,
+.section7 .xia .container .nr .rq .u > div div .money,
+.section8 .xia .container .nr .rq .u > div div .money,
+.section9 .xia .container .nr .rq .u > div div .money {
+  position: absolute;
+  bottom: 5px;
+  color: #C81623;
+  font-size: 14px;
+}
+.section10 {
+  margin-bottom: 15px;
+}
+.section10 .shang .tb {
+  display: inline-block;
+  width: 40px;
+  height: 25px;
+  position: relative;
+  font-size: 10px;
+  line-height: 25px;
+  padding-left: 3px;
+  padding-top: 2px;
+  color: white;
+  background-image: url('images/product_home_1.0.0.png');
+}
+.section10 .shang h3 {
+  color: #333;
+}
+.section10 .shang .daohang {
+  z-index: 1;
+  border-bottom: none;
+  position: relative;
+  bottom: -16px;
+}
+.section10 .shang .daohang ul .first {
+  border: 1px solid #C81623;
+  border-top: 2px solid #C81623;
+  border-bottom: 1px solid white;
+}
+.section10 .shang .daohang ul .first a {
+  border-right: none;
+}
+.section10 .shang .daohang ul .last {
+  border-right: 1px solid #ccc;
+}
+.section10 .shang .daohang ul .last a {
+  border-right: none;
+}
+.section10 .shang .daohang ul li {
+  border-top: 1px solid #ccc;
+  list-style: none;
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+.section10 .shang .daohang ul li a {
+  color: #666;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-right: 1px solid #ccc;
+}
+.section10 .shang .daohang ul li a:hover {
+  color: #C81623;
+  text-decoration: none;
+}
+.section10 .xia .container {
+  border-top: 1px solid #C81623;
+  position: relative;
+}
+.section10 .xia .container .fix ._t {
+  position: relative;
+}
+.section10 .xia .container .fix ._t .c1 {
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.5);
+  bottom: 148px;
+  width: 17.4%;
+}
+.section10 .xia .container .fix ._t .c1 ul {
+  width: 100%;
+  list-style: none;
+}
+.section10 .xia .container .fix ._t .c1 ul li {
+  float: left;
+  width: 50%;
+  height: 45px ;
+  line-height: 45px;
+  padding-left: 10px;
+}
+.section10 .xia .container .fix ._t .c1 ul li span {
+  position: relative;
+  top: 8px;
+  margin-right: 5px;
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  background-image: url('images/clothesicon.png');
+}
+.section10 .xia .container .fix ._t .c1 ul li .s2 {
+  background-position: 0 -26px;
+}
+.section10 .xia .container .fix ._t .c1 ul li .s3 {
+  background-position: 0 -52px;
+}
+.section10 .xia .container .fix ._t .c1 ul li .s4 {
+  background-position: 0 -78px;
+}
+.section10 .xia .container .fix ._t .c1 ul li .s5 {
+  background-position: 0 -104px;
+}
+.section10 .xia .container .fix ._t .c1 ul li .s6 {
+  background-position: 0 -130px;
+}
+.section10 .xia .container .fix ._t .c1 ul li a {
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+.section10 .xia .container .fix ._t .c1 ul li a:hover {
+  color: #C81623;
+  text-decoration: none;
+}
+.section10 .xia .container .fix ._t .c2 {
+  padding-top: 33px;
+  padding-bottom: 5px;
+  padding-left: 27px;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.7);
+  bottom: 0px;
+  width: 27.2%;
+}
+.section10 .xia .container .fix ._t .c2 .hot {
+  color: #c81623;
+}
+.section10 .xia .container .fix ._t .c2 ul {
+  margin-right: 42px;
+}
+.section10 .xia .container .fix ._t .c2 li {
+  list-style: none;
+  height: 25px;
+  line-height: 25px;
+}
+.section10 .xia .container .fix ._t .c2 a {
+  color: #999;
+  padding-right: 5px;
+}
+.section10 .xia .container .fix ._t .c2 a:hover {
+  color: #C81623;
+  text-decoration: none;
+}
+.section10 .xia .container .nr {
+  position: absolute;
+  z-index: 10;
+  width: 83%;
+  right: 0;
+  top: 0;
+}
+.section10 .xia .container .nr .rq {
+  position: relative;
+}
+.section10 .xia .container .nr .rq > ul {
+  display: none;
+  position: absolute;
+}
+.section10 .xia .container .nr .rq .u1 {
+  display: block;
+  width: 100%;
+  height: 50px;
+}
+.section10 .xia .container .nr .rq .u1 > div > div {
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  cursor: pointer;
+}
+.section10 .xia .container .nr .rq .u1 .one {
+  width: 220px;
+}
+.section10 .xia .container .nr .rq .u1 .one img {
+  width: 100%;
+}
+.section10 .xia .container .nr .rq .u1 ._l {
+  width: 440px;
+}
+.section10 .xia .container .nr .rq .u1 ._l img {
+  width: 100%;
+  height: 100%;
+}
+.section10 .xia .container .nr .rq .u1 ._l ._c {
+  overflow: hidden;
+  height: 237px;
+  position: relative;
+  text-align: center;
+}
+.section10 .xia .container .nr .rq .u1 ._l ._c .imgs li {
+  position: absolute;
+  top: 0;
+}
+.section10 .xia .container .nr .rq .u1 ._l ._c .imgs li img {
+  border-bottom: 1px solid #eee;
+}
+.section10 .xia .container .nr .rq .u1 ._l ._c .tags {
+  position: absolute;
+  bottom: 10px;
+  left: 200px;
+  z-index: 10;
+}
+.section10 .xia .container .nr .rq .u1 ._l ._c .tags li {
+  list-style: none;
+  width: 10px ;
+  height: 10px;
+  border-radius: 10px;
+  float: left;
+  margin-right: 5px;
+  background-color: #333;
+}
+.section10 .xia .container .nr .rq .u1 ._l ._c .zuo {
+  width: 25px;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  top: 40%;
+}
+.section10 .xia .container .nr .rq .u1 ._l ._c .you {
+  width: 25px;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  top: 40%;
+}
+.section10 .xia .container .nr .rq .u1 ._l ._b {
+  position: relative;
+  height: 237px;
+  overflow: hidden;
+}
+.section10 .xia .container .nr .rq .u1 ._l ._b img {
+  width: 50%;
+}
+.section10 .xia .container .nr .rq .u1 ._l ._b .ii {
+  right: 0;
+  position: absolute;
+  z-index: 1000;
+}
+.section10 .xia .container .nr .rq .u1 ._l .i0 {
+  border-right: 1px solid #ccc;
+}
+.section10 .xia .container .nr .rq .u1 ._z {
+  border-right: 1px solid #ccc;
+  width: 341px;
+  overflow: hidden;
+}
+.section10 .xia .container .nr .rq .u1 ._z ul {
+  margin-top: 15px;
+}
+.section10 .xia .container .nr .rq .u1 ._z .title {
+  border-right: none;
+  height: 45px;
+  line-height: 45px;
+  font-size: 25px;
+  width: 100%;
+}
+.section10 .xia .container .nr .rq .u1 ._z .bot {
+  border-right: none;
+}
+.section10 .xia .container .nr .rq .u1 ._z .zb {
+  cursor: pointer;
+  border-right: 1px dashed #ccc;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.section10 .xia .container .nr .rq .u1 ._z .zb img {
+  width: 50px;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+.section10 .xia .container .nr .rq .u1 ._z .zb:hover {
+  color: red;
+}
+.section10 .xia .container .nr .rq .u1 ._z .zj {
+  margin-left: 10px;
+}
+.section10 .xia .container .nr .rq .u1 ._z .zj img {
+  width: 80px;
+}
+.section10 .xia .container .nr .rq .u1 ._z .yb {
+  position: relative;
+  margin-left: 10px;
+}
+.section10 .xia .container .nr .rq .u1 ._z .yb .tm {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.section10 .xia .container .nr .rq .u1 ._z .yb .tm:hover {
+  color: #c81623;
+}
+.section10 .xia .container .nr .rq .u1 ._z .yb .jj {
+  width: 150px;
+  height: 55px;
+  background-color: #eee;
+  padding: 5px 20px 5px 5px;
+}
+.section10 .xia .container .nr .rq .u1 ._z .yb .sj {
+  width: 10px;
+  height: 10px;
+  background-color: #eee;
+  transform: rotate(45deg);
+  position: absolute;
+  left: -5px;
+  top: 45px;
+}
+.section10 .xia .container .nr .rq .u1 ._z .yb span {
+  font-size: 30px;
+}
+.section10 .xia .container .nr .rq .u {
+  width: 100%;
+}
+.section10 .xia .container .nr .rq .u a {
+  color: #666666;
+}
+.section10 .xia .container .nr .rq .u a:hover {
+  color: #C81623;
+  text-decoration: none;
+}
+.section10 .xia .container .nr .rq .u img {
+  cursor: pointer;
+}
+.section10 .xia .container .nr .rq .u .shang {
+  height: 237.5px;
+  padding-top: 20px;
+  padding-left: 18px;
+  padding-right: 18px;
+  position: relative;
+}
+.section10 .xia .container .nr .rq .u .shang img {
+  margin-bottom: 10px;
+}
+.section10 .xia .container .nr .rq .u > div {
+  width: 25%;
+}
+.section10 .xia .container .nr .rq .u > div div {
+  text-align: center;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #cccccc;
+}
+.section10 .xia .container .nr .rq .u > div div p {
+  text-align: left;
+}
+.section10 .xia .container .nr .rq .u > div div .money {
+  position: absolute;
+  bottom: 5px;
+  color: #C81623;
+  font-size: 14px;
+}
+.section12 {
+  margin-bottom: 15px;
+}
+.section12 .shang .tb {
+  display: inline-block;
+  width: 40px;
+  height: 25px;
+  position: relative;
+  font-size: 10px;
+  line-height: 25px;
+  padding-left: 3px;
+  padding-top: 2px;
+  color: white;
+  background-image: url('images/product_home_1.0.0.png');
+}
+.section12 .shang h3 {
+  color: #333;
+}
+.section12 .xia .container {
+  border-top: 1px solid #C81623;
+  position: relative;
+}
+.section12 .xia .container .fix ._t {
+  position: relative;
+}
+.section12 .xia .container .fix ._t .c1 {
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.5);
+  bottom: 148px;
+}
+.section12 .xia .container .fix ._t .c1 ul {
+  width: 100%;
+  list-style: none;
+}
+.section12 .xia .container .fix ._t .c1 ul li {
+  float: left;
+  width: 50%;
+  height: 45px ;
+  line-height: 45px;
+  padding-left: 10px;
+}
+.section12 .xia .container .fix ._t .c1 ul li span {
+  position: relative;
+  top: 8px;
+  margin-right: 5px;
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  background-image: url('images/clothesicon.png');
+}
+.section12 .xia .container .fix ._t .c1 ul li .s2 {
+  background-position: 0 -26px;
+}
+.section12 .xia .container .fix ._t .c1 ul li .s3 {
+  background-position: 0 -52px;
+}
+.section12 .xia .container .fix ._t .c1 ul li .s4 {
+  background-position: 0 -78px;
+}
+.section12 .xia .container .fix ._t .c1 ul li .s5 {
+  background-position: 0 -104px;
+}
+.section12 .xia .container .fix ._t .c1 ul li .s6 {
+  background-position: 0 -130px;
+}
+.section12 .xia .container .fix ._t .c1 ul li a {
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+.section12 .xia .container .fix ._t .c1 ul li a:hover {
+  color: #C81623;
+  text-decoration: none;
+}
+.section12 .xia .container .fix ._t .c2 {
+  padding-top: 33px;
+  padding-bottom: 5px;
+  padding-left: 27px;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.7);
+  bottom: 0px;
+}
+.section12 .xia .container .fix ._t .c2 .hot {
+  color: #c81623;
+}
+.section12 .xia .container .fix ._t .c2 ul {
+  margin-right: 42px;
+}
+.section12 .xia .container .fix ._t .c2 li {
+  list-style: none;
+  height: 25px;
+  line-height: 25px;
+}
+.section12 .xia .container .fix ._t .c2 a {
+  color: #999;
+  padding-right: 5px;
+}
+.section12 .xia .container .fix ._t .c2 a:hover {
+  color: #C81623;
+  text-decoration: none;
+}
+.section12 .xia .container .nr {
+  position: absolute;
+  z-index: 10;
+  width: 83%;
+  right: 0;
+  top: 0;
+}
+.section12 .xia .container .nr .rq {
+  position: relative;
+}
+.section12 .xia .container .nr .rq > ul {
+  display: none;
+  position: absolute;
+}
+.section12 .xia .container .nr .rq .u1 {
+  display: block;
+  width: 100%;
+  height: 50px;
+}
+.section12 .xia .container .nr .rq .u1 > div > div {
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  cursor: pointer;
+}
+.section12 .xia .container .nr .rq .u1 .one {
+  width: 220px;
+}
+.section12 .xia .container .nr .rq .u1 .one img {
+  width: 100%;
+}
+.section12 .xia .container .nr .rq .u1 ._l {
+  width: 395px;
+}
+.section12 .xia .container .nr .rq .u1 ._l img {
+  width: 100%;
+  height: 100%;
+}
+.section12 .xia .container .nr .rq .u1 ._l ._c {
+  overflow: hidden;
+  height: 237px;
+  position: relative;
+  text-align: center;
+}
+.section12 .xia .container .nr .rq .u1 ._l ._c .imgs li {
+  position: absolute;
+  top: 0;
+}
+.section12 .xia .container .nr .rq .u1 ._l ._c .imgs li img {
+  border-bottom: 1px solid #eee;
+}
+.section12 .xia .container .nr .rq .u1 ._l ._c .tags {
+  position: absolute;
+  bottom: 10px;
+  left: 200px;
+  z-index: 10;
+}
+.section12 .xia .container .nr .rq .u1 ._l ._c .tags li {
+  list-style: none;
+  width: 10px ;
+  height: 10px;
+  border-radius: 10px;
+  float: left;
+  margin-right: 5px;
+  background-color: #333;
+}
+.section12 .xia .container .nr .rq .u1 ._l ._c .zuo {
+  width: 25px;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  top: 40%;
+}
+.section12 .xia .container .nr .rq .u1 ._l ._c .you {
+  width: 25px;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  top: 40%;
+}
+.section12 .xia .container .nr .rq .u1 ._l ._b {
+  position: relative;
+  height: 119px;
+  overflow: hidden;
+}
+.section12 .xia .container .nr .rq .u1 ._l ._b img {
+  width: 50%;
+}
+.section12 .xia .container .nr .rq .u1 ._l ._b .ii {
+  right: 0;
+  position: absolute;
+  z-index: 1000;
+}
+.section12 .xia .container .nr .rq .u1 ._l .i0 {
+  border-right: 1px solid #ccc;
+}
+.section12 .xia .container .nr .rq .u1 ._z {
+  border-right: 1px solid #ccc;
+  width: 341px;
+  overflow: hidden;
+}
+.section12 .xia .container .nr .rq .u1 ._z ul {
+  margin-top: 15px;
+}
+.section12 .xia .container .nr .rq .u1 ._z .title {
+  border-right: none;
+  height: 45px;
+  line-height: 45px;
+  font-size: 25px;
+  width: 100%;
+}
+.section12 .xia .container .nr .rq .u1 ._z .bot {
+  border-right: none;
+}
+.section12 .xia .container .nr .rq .u1 ._z .zb {
+  cursor: pointer;
+  border-right: 1px dashed #ccc;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.section12 .xia .container .nr .rq .u1 ._z .zb img {
+  width: 50px;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+.section12 .xia .container .nr .rq .u1 ._z .zb:hover {
+  color: red;
+}
+.section12 .xia .container .nr .rq .u1 ._z .zj {
+  margin-left: 10px;
+}
+.section12 .xia .container .nr .rq .u1 ._z .zj img {
+  width: 80px;
+}
+.section12 .xia .container .nr .rq .u1 ._z .yb {
+  position: relative;
+  margin-left: 10px;
+}
+.section12 .xia .container .nr .rq .u1 ._z .yb .tm {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.section12 .xia .container .nr .rq .u1 ._z .yb .jj {
+  width: 150px;
+  height: 55px;
+  background-color: #eee;
+  padding: 5px 20px 5px 5px;
+}
+.section12 .xia .container .nr .rq .u1 ._z .yb .sj {
+  width: 10px;
+  height: 10px;
+  background-color: #eee;
+  transform: rotate(45deg);
+  position: absolute;
+  left: -5px;
+  top: 45px;
+}
+.section12 .xia .container .nr .rq .u1 ._z .yb span {
+  font-size: 30px;
+}
+.section12 .xia .container .nr .rq .cc2 {
+  padding-bottom: 15px;
+}
+.section12 .xia .container .nr .rq .u {
+  width: 100%;
+}
+.section12 .xia .container .nr .rq .u a {
+  color: #666666;
+}
+.section12 .xia .container .nr .rq .u a:hover {
+  color: #C81623;
+  text-decoration: none;
+}
+.section12 .xia .container .nr .rq .u img {
+  cursor: pointer;
+}
+.section12 .xia .container .nr .rq .u .shang {
+  height: 237.5px;
+  padding-top: 20px;
+  padding-left: 18px;
+  padding-right: 18px;
+  position: relative;
+}
+.section12 .xia .container .nr .rq .u .shang img {
+  margin-bottom: 10px;
+}
+.section12 .xia .container .nr .rq .u > div {
+  width: 25%;
+}
+.section12 .xia .container .nr .rq .u > div div {
+  text-align: center;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #cccccc;
+}
+.section12 .xia .container .nr .rq .u > div div p {
+  text-align: left;
+}
+.section12 .xia .container .nr .rq .u > div div .money {
+  position: absolute;
+  bottom: 5px;
+  color: #C81623;
+  font-size: 14px;
+}
+.images1 .container,
+.images2 .container,
+.images3 .container,
+.images4 .container,
+.images5 .container {
+  height: 67px;
+  padding-top: 15px;
+  background-color: #F7F7F7;
+}
+.images1 .last,
+.images2 .last,
+.images3 .last,
+.images4 .last,
+.images5 .last {
+  border-right: none;
+}
+.images1 li,
+.images2 li,
+.images3 li,
+.images4 li,
+.images5 li {
+  list-style: none;
+  float: left;
+  border-right: 1px solid #ccc;
+  border-right-style: dotted;
+  width: 10%;
+  text-align: center;
+}
+.gray_img,
+.blue_img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+.gray_img img,
+.blue_img img {
+  margin-right: -5px;
+}
+.cebian_l {
+  position: fixed;
+  z-index: 100;
+  top: 100px;
+}
+.cebian_l a {
+  color: white;
+  text-decoration: none;
+}
+.cebian_l li {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin-left: 30px;
+  list-style: none;
+}
+.cebian_l li .a2 {
+  display: none;
+}
+.cebian_l li > div {
+  border-bottom: 1px solid #ccc;
+  border-bottom-style: dotted;
+  width: 70%;
+  height: 100%;
+  margin-left: 15%;
+}
+.cebian_l li .last {
+  border-bottom: none;
+}
+.cebian_l li span {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  color: #666666;
+}
+.cebian_l li:hover {
+  background-color: #C81623;
+}
+.cebian_l li:hover .a1 {
+  display: none;
+}
+.cebian_l li:hover .a2 {
+  display: block;
+}
+.cebian_l li:hover .a2 {
+  text-decoration: none;
+  color: #ffffff;
+}
+.ttdj {
+  margin-bottom: 20px;
+}
+.ttdj .title {
+  position: relative;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.ttdj .title .sd {
+  position: absolute;
+  left: 900px;
+}
+.ttdj a {
+  color: #777;
+}
+.ttdj a:hover {
+  color: #c81623;
+  text-decoration: none;
+}
+.ttdj .money {
+  color: #c81623;
+  font-size: 18px;
+}
+.ttdj .nr > div {
+  float: left;
+  border: 1px solid #eee;
+  margin-right: -1px;
+}
+.ttdj .nr .img {
+  position: relative;
+}
+.ttdj .nr .img img {
+  position: absolute;
+}
+.ttdj .one {
+  width: 240px;
+  height: 280px;
+}
+.ttdj .one .img {
+  cursor: pointer;
+  margin-left: 50px;
+  width: 150px;
+  position: relative;
+}
+.ttdj .one p {
+  margin-top: 180px;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+.ttdj .one .money {
+  padding-left: 20px;
+}
+.ttdj .two,
+.ttdj .three,
+.ttdj .four {
+  height: 280px;
+  width: 220px;
+}
+.ttdj .two img,
+.ttdj .three img,
+.ttdj .four img {
+  width: 100%;
+  overflow: hidden;
+}
+.ttdj .two .img,
+.ttdj .three .img,
+.ttdj .four .img {
+  cursor: pointer;
+}
+.ttdj .two .shang,
+.ttdj .three .shang,
+.ttdj .four .shang {
+  border-bottom: 1px solid #eee;
+}
+.ttdj .two .shang,
+.ttdj .three .shang,
+.ttdj .four .shang,
+.ttdj .two .xia,
+.ttdj .three .xia,
+.ttdj .four .xia {
+  height: 50%;
+  padding: 20px 10px 20px 10px;
+}
+.ttdj .two .img,
+.ttdj .three .img,
+.ttdj .four .img {
+  width: 50%;
+  float: left;
+}
+.ttdj .two .ms,
+.ttdj .three .ms,
+.ttdj .four .ms {
+  width: 50%;
+  float: right;
+}
+.ttdj .five {
+  padding: 20px;
+  height: 280px;
+  width: 315px;
+  overflow: hidden;
+}
+.ttdj .five .fl {
+  position: relative;
+  top: -280px;
+}
+.ttdj .five .ii img {
+  cursor: pointer;
+}
+.ttdj .five ._l {
+  height: 140px;
+  float: left;
+  width: 40%;
+  margin-right: 10px;
+}
+.ttdj .five ._l .ii {
+  width: 100%;
+}
+.ttdj .five ._r {
+  float: right;
+  width: 55%;
+}
+.ttdj .five .name {
+  margin-bottom: 5px;
+}
+.ttdj .five .name img {
+  border-radius: 20px;
+}
+.ttdj .five .say {
+  position: relative;
+}
+.ttdj .five .say .pj {
+  background-color: #F8F8F8;
+  padding: 10px;
+}
+.ttdj .five .say .sj {
+  padding: 0;
+  position: absolute;
+  border: 8px solid #F8F8F8;
+  left: -16px;
+  top: 20px;
+  background-color: none;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-top-color: transparent;
+}
+footer li {
+  list-style: none;
+}
+footer .fo_one {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  background-color: #F5F5F5;
+}
+footer .fo_one li {
+  float: left;
+}
+footer .fo_one .mr {
+  margin-right: 105px;
+}
+footer .fo_two {
+  margin-top: 20px;
+}
+footer .fo_two .container {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+footer .fo_two .title {
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: bold;
+}
+footer .fo_two a {
+  color: #777;
+}
+footer .fo_two a:hover {
+  color: #c81623;
+  text-decoration: none;
+}
+footer .fo_two ul {
+  margin-right: 120px;
+  float: left;
+}
+footer .fo_two .rr {
+  padding-left: 20px;
+  width: 210px;
+  float: left;
+  height: 170px;
+  background-repeat: no-repeat;
+  background-position: 0 -130px;
+  background-image: url('images/20130330B_1.png');
+}
+footer .fo_two .rr .xq {
+  float: right;
+}
+footer .fo_three {
+  text-align: center;
+  margin-top: 20px;
+}
+footer .fo_three .o ul {
+  margin-left: 250px;
+}
+footer .fo_three .t ul {
+  margin-left: 245px;
+}
+footer .fo_three .tr ul {
+  margin-left: 210px;
+  border: 1px solid white;
+}
+footer .fo_three .las {
+  border-right: none;
+}
+footer .fo_three li {
+  list-style: none;
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #ccc;
+}
+footer .fo_three a {
+  color: #777777;
+}
+footer .fo_three a:hover {
+  color: #c81623;
+  text-decoration: none;
+}
+footer .fo_four {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+footer .fo_four a {
+  margin-right: 10px;
+}
+.l_fix {
+  box-shadow: 0 -1px 0.5px 1px #cccccc;
+  position: fixed;
+  bottom: 0;
+}
+.l_fix .l_l {
+  float: left;
+  border: 1px solid #ccc;
+  width: 40px;
+  height: 40px;
+  padding-left: 5px;
+}
+.l_fix .l_l > div {
+  width: 30px;
+  height: 35px;
+  background-image: url('images/background_new.png');
+}
+.l_fix .l_r {
+  float: left;
+  border: 1px solid #ccc;
+  border-left: none;
+  height: 40px;
+  width: 20px;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+.l_fix .l_r > div {
+  width: 10px;
+  height: 15px;
+  background-image: url('images/background_new.png');
+  background-position: -490px -430px;
+}
+.l_fix .l_r:hover > div {
+  background-position: -500px -430px;
+}
+.r_fix {
+  position: fixed;
+  width: 5px;
+  bottom: 0;
+  height: 600px;
+  background-color: #7A6E6E;
+  right: 0;
+}
+.r_fix .fix_t {
+  top: 150px;
+  width: 40px;
+  height: 300px;
+  position: relative;
+  left: -40px;
+}
+.r_fix .fix_t .jdhy span {
+  background-position: -93px -180px;
+}
+.r_fix .fix_t .gwc span {
+  background-position: -55px -7px;
+}
+.r_fix .fix_t .wdgz span {
+  background-position: -55px -57px;
+}
+.r_fix .fix_t .wdzj span {
+  background-position: -55px -107px;
+}
+.r_fix .fix_t .wdxx span {
+  background-position: -195px -159px;
+}
+.r_fix .fix_t .zx span {
+  background-position: -55px -159px;
+}
+.r_fix .fix_t > div {
+  z-index: 10;
+  width: 40px;
+  transition: all 0.5s ease;
+  height: 40px;
+  margin-bottom: 3px;
+  margin-left: 5px;
+  background-color: #7A6E6E;
+  color: white;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  position: relative;
+}
+.r_fix .fix_t > div span {
+  width: 25px;
+  height: 25px;
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  background-image: url('images/toolbars.png');
+}
+.r_fix .fix_t > div > div {
+  z-index: -1;
+  transition: all 0.5s ease;
+  position: absolute;
+  width: 75px;
+  height: 40px;
+  line-height: 40px;
+  left: 50px;
+  padding-left: 10px;
+  background-color: #7A6E6E;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.r_fix .fix_t > div:hover {
+  background-color: #c81623;
+}
+.r_fix .fix_t > div:hover > div {
+  left: -65px;
+  background-color: #c81623;
+}
+.r_fix .fix_b {
+  width: 40px;
+  height: 100px;
+  position: relative;
+  left: -40px;
+  top: 200px;
+}
+.r_fix .fix_b .db span {
+  background-position: -52px -255px;
+}
+.r_fix .fix_b .fk span {
+  background-position: -52px -305px;
+}
+.r_fix .fix_b > div {
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 3px;
+  margin-left: 5px;
+  background-color: #7A6E6E;
+  color: white;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  transition: all 0.5s ease;
+  position: relative;
+}
+.r_fix .fix_b > div span {
+  width: 25px;
+  height: 25px;
+  display: block;
+  position: absolute;
+  top: 8px;
+  left: 5px;
+  background-image: url('images/toolbars.png');
+}
+.r_fix .fix_b > div > div {
+  z-index: -1;
+  transition: all 0.5s ease;
+  position: absolute;
+  width: 55px;
+  height: 40px;
+  line-height: 40px;
+  left: 50px;
+  padding-left: 10px;
+  background-color: #7A6E6E;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.r_fix .fix_b > div:hover {
+  background-color: #c81623;
+}
+.r_fix .fix_b > div:hover > div {
+  left: -45px;
+  background-color: #c81623;
+}
